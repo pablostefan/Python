@@ -1,4 +1,4 @@
-valor = float(input())
+valor = eval(input())
 
 div = int(valor / 100)
 nota_100 = div
@@ -45,7 +45,6 @@ moeda_25 = div
 print(f'{moeda_25} moeda (s) de R$ 0.25')
 
 valor = (valor % 0.25)
-print(type(valor))
 div = int(valor / 0.1)
 moeda_10 = div
 print(f'{moeda_10} moeda (s) de R$ 0.10')
@@ -55,7 +54,6 @@ div = int(valor / 0.05)
 moeda_5 = div
 print(f'{moeda_5} moeda (s) de R$ 0.05')
 
-valor = (valor % 0.05)
-div = int(valor / 0.01)
-moeda_5 = div
+div = round(valor / 0.01)
+moeda_1 = div
 print(f'{moeda_1} moeda (s) de R$ 0.01')
