@@ -1,6 +1,4 @@
 import pygame
-from pygame import sprite # Import da biblioteca pygame
-from pygame.locals import *
 from pygame.time import Clock
 
 LARGURA = 400
